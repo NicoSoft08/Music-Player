@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9104389dcd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./MusicPlayer.css">
+    <title>MusicPlayer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content_square">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+
+                    <div class="myThreeBars">
+                        <div class="myHead">
+                            <i class="fa-sharp fa-solid fa-icons"></i> Nico Music Player
+                        </div>
+                        <div class="threeBars_content">
+                            <div class="contenu">
+                                <div><i class="fa-solid fa-sliders"></i></div>
+                                <div>MP3 Player</div>
+                            </div>
+                            <div class="contenu">
+                                <div><i class="fa-solid fa-clock"></i></div>
+                                <div>Sleep Timer</div>
+                            </div>
+                            <div class="contenu">
+                                <div><i class="fa-solid fa-car"></i></div>
+                                <div>Car Mode</div>
+                            </div>
+                            <div class="contenu">
+                                <div><i class="fa-solid fa-gear"></i></div>
+                                <div>Settings</div>
+                            </div>
+                            <div class="contenu">
+                                <div><i class="fa-solid fa-thumbs-up"></i></div>
+                                <div>Rate for us</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        
+            <img src="./sing.jpeg" class="song_img">
+            <h1>Dependable GOD</h1>
+            <p>Victor Thompson</p>
+
+            <audio  id="song">
+                <source src="./audio.mp3.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div class="backward"><i class="fa-sharp fa-solid fa-backward"></i></div>
+                <div class="play_pause" onclick="playPause()">
+                    <i class="fa-sharp fa-solid fa-play" id="ctrlIcon"></i>
+                    <i class="fa-sharp fa-solid fa-pause"></i>
+                </div>
+                <div class="forward"><i class="fa-sharp fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="./MusicPlayer.js"></script>
+</body>
+</html>
